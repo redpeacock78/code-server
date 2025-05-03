@@ -2,7 +2,7 @@ FROM codercom/code-server:latest
 
 USER root
 
-RUN apt update && apt install -y curl git \
+RUN apt update && apt install -y curl git unzip \
  && curl -fsSL https://deno.land/install.sh | sh \
  && npm install -g civet
 
