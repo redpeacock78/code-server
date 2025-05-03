@@ -6,7 +6,7 @@ ENV PATH="/root/.deno/bin:$PATH"
 
 RUN apt update && apt install -y curl git unzip \
  && curl -fsSL https://deno.land/install.sh | sh \
- && deno install -g npm:@danielx/civet
+ && deno install -g -A -n civet npm:@danielx/civet
 
 EXPOSE 8080
 
